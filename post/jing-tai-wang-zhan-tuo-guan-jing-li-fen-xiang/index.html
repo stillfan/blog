@@ -8,9 +8,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://blog.youfu.fan/favicon.ico?v=1725709230181">
+<link rel="shortcut icon" href="https://blog.youfu.fan/favicon.ico?v=1725710751455">
 <link rel="stylesheet" href="https://blog.youfu.fan/styles/main.css">
 
+
+  
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
+  
+
+  
 
 
 <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -29,7 +35,7 @@
   <div class="top-container" data-aos="fade-right">
     <div class="top-header-container">
       <a class="site-title-container" href="https://blog.youfu.fan">
-        <img src="https://blog.youfu.fan/images/avatar.png?v=1725709230181" class="site-logo">
+        <img src="https://blog.youfu.fan/images/avatar.png?v=1725710751455" class="site-logo">
         <h1 class="site-title">Welcome to Youfu&#39;s Blog</h1>
       </a>
       <div class="menu-btn" @click="menuVisible = !menuVisible">
@@ -130,6 +136,12 @@ https://page.om.qq.com/page/O_0O5hZdnZDOaerjxTq1mJgA0</p>
             
 
             
+              
+                <div id="gitalk-container" data-aos="fade-in"></div>
+              
+
+              
+            
 
           </div>
 
@@ -152,6 +164,29 @@ var app = new Vue({
 </script>
 
 
+
+
+
+  
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
+
+      var gitalk = new Gitalk({
+        clientID: 'Ov23liub8lIwKyqKHutI',
+        clientSecret: '8ad705c389caaa48b2e12cdcbe5bff6f9a5a1785',
+        repo: 'blog',
+        owner: 'stillfan',
+        admin: ['stillfan'],
+        id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false  // Facebook-like distraction free mode
+      })
+
+      gitalk.render('gitalk-container')
+
+    </script>
+  
+
+  
 
 
 
