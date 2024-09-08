@@ -1,10 +1,11 @@
 <html>
+
 <head>
     <meta charset="utf-8"/>
 <meta name="description" content=""/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
-<title>静态网站托管经历分享 | Welcome to Youfu&#39;s Blog</title>
+<title>友情链接 - Welcome to Youfu&#39;s Blog</title>
 
 <link rel="shortcut icon" href="https://blog.youfu.fan/favicon.ico?v=1725778217718">
 
@@ -25,11 +26,12 @@
 
 
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.css">
 </head>
+
 <body>
 <div class="main gt-bg-theme-color-first">
-    <nav class="navbar navbar-expand-lg">
+        <div class="main-content">
+            <nav class="navbar navbar-expand-lg">
     <div class="navbar-brand">
         <img class="user-avatar" src="/images/avatar.png" alt="头像">
         <div class="site-name gt-c-content-color-first">
@@ -93,57 +95,64 @@
     </div>
 </nav>
 
-    <div class="post-container">
-        <div class="post-detail gt-bg-theme-color-second">
-            <article class="gt-post-content">
-                <h2 class="post-title">
-                    静态网站托管经历分享
-                </h2>
-                <div class="post-info">
-                    <time class="post-time gt-c-content-color-first">
-                        · 2024-09-07 ·
-                    </time>
+            <div class="post-container">
+                <div class="post-detail">
+                    <article>
+                        <!-- <div class="post-content-wrapper"> -->
+                            <div class="post-content">
+                                <div class="friends-desc">
+                                    
+                                </div>
+                                <h3 id="linklist">友链列表</h3>
+                                
+                                    
+                                        <div class="friend-box">
+                                            <img class="friend-avatar" src="">
+                                            <div class="flink-info">
+                                                
+                                                        <a class="gt-c-content-color-first" href="www.github.com" target="_blank">Github</a>
+                                                        
+                                                <br />
+                                                <div class="flink-info-desc gt-c-content-color-first">
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    
+                                        <div class="friend-box">
+                                            <img class="friend-avatar" src="">
+                                            <div class="flink-info">
+                                                
+                                                        <a class="gt-c-content-color-first" href="www.vercel.com" target="_blank">vercel</a>
+                                                        
+                                                <br />
+                                                <div class="flink-info-desc gt-c-content-color-first">
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    
+                                        <div class="friend-box">
+                                            <img class="friend-avatar" src="">
+                                            <div class="flink-info">
+                                                
+                                                        <a class="gt-c-content-color-first" href="www.zoneedit.com" target="_blank">zoneedit</a>
+                                                        
+                                                <br />
+                                                <div class="flink-info-desc gt-c-content-color-first">
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    
+                                
+                            </div>
+                        <!-- </div> -->
+                    </article>
+                </div>
+                
                     
-                </div>
-                <div class="post-content">
-                    <p>从刚开始接触gitee，到github，再到目前的vercel，真是历经千辛万苦。</p>
-<p>1.偶然的网上浏览，看到了gitee，国内的代码托管平台，还有pages功能。虽然不能绑定域名，但也能用二级域名访问，速度还可以。但好景不长，从今年的五一还是什么时候开始，居然不能访问了，显示Timeout。经搜索，可能是不提供服务了。可气的是没给用户通知一下，连个公告都没有。</p>
-<p>2.这之前也听过github，也有pages功能，还能绑定域名。但考虑到访问速度和不稳定因素，还是选择了gitee。但gitee pages停用以后不得不选择github。简单看教程后上传网页，绑定域名，访问成功，网页更新以后还能自动部署。但有时候访问比较快，有时候很慢，有时候官网断连。真是让人头痛，万一哪天被墙了，直接歇菜。还有一个主要因素是访问不稳定，速度慢。</p>
-<p>3.为了避免被墙和访问速度，还是考虑国内的静态网站托管平台了。由于域名是在腾讯买的，而且腾讯价格亲民，服务亲民，所以还是在腾讯的服务产品里面搜索。自己摸索了好几个应用。最后觉的对象存储（COS）价格低，适合流量低的网页。试用时购买了国内节点，创建存储桶，上传文件。<br>
-但在绑定域名时遇到了问题，需要备案，但备案又需要云服务器。联系客服、工程师，告知通过COS是无法备案的，也就是无法绑定域名的。<br>
-又遇到了难题，通过网上搜索，有人说购买COS时不要买国内节点就能绑定域名。于是，买了香港节点后果然可以绑定域名了，绑定成功后访问成功（用二级域名访问时自动下载页面，而不是打开流量）。<br>
-<img src="https://blog.youfu.fan/post-images/1725709215272.webp" alt="" loading="lazy"><br>
-4.为了学习更多知识，检索了许多可以提供pages服务的托管平台，网上介绍较多的有cloudflare、vercel、netlify、gitlib等。由于不是搞专业的，试了试gitlib，实现有点点难度，放弃了。再试cloudflare，访问速度比较慢。</p>
-<p>5.最后试了vercel，部署简单，直接和github关联，一件抓取。绑定域名也很简单，访问速度很快，感觉和腾讯的差不多，从github修改文件后自动同步，无需在vercel上操作。<br>
-<img src="https://blog.youfu.fan/post-images/1725709197161.webp" alt="" loading="lazy"><br>
-<img src="https://blog.youfu.fan/post-images/1725709206764.webp" alt="" loading="lazy"><br>
-<img src="https://blog.youfu.fan/post-images/1725709225603.webp" alt="" loading="lazy"><br>
-网络小白，分享点pages部署网站的经历，请勿吐槽，请多指点！<br>
-https://page.om.qq.com/page/O_0O5hZdnZDOaerjxTq1mJgA0</p>
-
-                </div>
-            </article>
-        </div>
-
-        
-            <div class="next-post">
-                <div class="next gt-c-content-color-first">下一篇</div>
-                <a href="https://blog.youfu.fan/post/hello-gridea/" class="post-title gt-a-link">
-                    Hello Gridea
-                </a>
-            </div>
-        
-
-        
-            <span id="/post/jing-tai-wang-zhan-tuo-guan-jing-li-fen-xiang/" class="leancloud_visitors" data-flag-title="静态网站托管经历分享">
-                <em class="post-meta-item-text">阅读量 </em>
-                <i class="leancloud-visitors-count">0</i>
-            </span>
-        
-
-        
-            
-                <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.css">
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.css">
 <script src="https://cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.js"></script>
 <script>
     // md5.min.js
@@ -186,41 +195,15 @@ https://page.om.qq.com/page/O_0O5hZdnZDOaerjxTq1mJgA0</p>
 
 </script>
 
-            
+                    
 
-            
-        
-
-        
-            <script src='https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js'></script>
-
-<style>
-	div#vcomments{
-		width:100%;
-		max-width: 1000px;
-		padding: 2.5%
-	}
-</style>
+                    
+                
+            </div>
 
 
-	<div id="vcomments"></div>
 
-<script>
-	new Valine({
-		el: '#vcomments',
-		appId: '',
-		appKey: '',
-		avatar: 'monsterid',
-		pageSize: 5,
-		recordIp: true,
-		placeholder: 'Just Go Go',
-		visitor: true,
-	});
-</script>
-
-        
-
-        <div class="site-footer gt-c-content-color-first">
+            <div class="site-footer gt-c-content-color-first">
     <div class="slogan gt-c-content-color-first">我的心是旷野和鸟，在你的眼睛里找到了天空...</div>
     <div class="social-container">
         
@@ -262,7 +245,8 @@ https://page.om.qq.com/page/O_0O5hZdnZDOaerjxTq1mJgA0</p>
   hljs.initHighlightingOnLoad()
 </script>
 
+        </div>
     </div>
-</div>
 </body>
+
 </html>
